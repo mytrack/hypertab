@@ -1,5 +1,5 @@
 <?php     
-mysql_connect("localhost", "root", "zxcvbnmk") or die("Error connecting to database: ".mysql_error());
+mysql_connect("localhost", "root", "") or die("Error connecting to database: ".mysql_error());
 
 #mysql_connect("localhost", "root", "root") or die("Error connecting to database: ".mysql_error());
 /*
