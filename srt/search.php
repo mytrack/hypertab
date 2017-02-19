@@ -39,11 +39,6 @@ mysql_select_db("test") or die(mysql_error());
 </body>
 
 
-
-
-
-
-
 <?php
 
 //$con=mysqli_connect("localhost","root","zxcvbnmk","srt");
@@ -54,7 +49,6 @@ mysql_select_db("test") or die(mysql_error());
     $query = $_GET['query']; 
     // gets value sent over search form
     
-
     $min_length = 3;
     // you can set minimum length of the query if you want
      
@@ -72,7 +66,6 @@ mysql_select_db("test") or die(mysql_error());
         //echo $query; $query=urlencode($query);
         $dbc=mysql_connect("localhost", "root", "zxcvbnmk");
         mysql_query("SET NAMES UTF8", $dbc); //very important!
-
 
         $raw_results = mysql_query("SELECT * FROM srt_eng WHERE (`rec_text` LIKE '%".$query."%')") or die(mysql_error());
 
